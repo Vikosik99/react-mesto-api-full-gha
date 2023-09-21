@@ -1,4 +1,4 @@
-export const BASE_URL = "http://localhost:3000";
+export const BASE_URL = "http://api.mestofull.vikosik99.nomoredomainsrocks.ru";
 
 function handleReply(res) {
   if (res.ok) {

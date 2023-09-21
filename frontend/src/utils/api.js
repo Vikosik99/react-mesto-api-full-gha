@@ -94,7 +94,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: "http://localhost:3000",
+  baseUrl: "http://api.mestofull.vikosik99.nomoredomainsrocks.ru",
   // headers: {
   //   authorization: "b6c4512c-817a-42b9-b0f0-214f2963b61f",
   //   "Content-Type": "application/json",
