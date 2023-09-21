@@ -1,0 +1,16 @@
+/*930px*/
+
+@media screen and (max-width: 930px) {
+  .logo {
+    padding-left: 27px;
+  }
+}
+
+/*525px*/
+
+@media screen and (max-width: 525px) {
+  .logo {
+    width: 134px;
+    box-sizing: border-box;
+  }
+}

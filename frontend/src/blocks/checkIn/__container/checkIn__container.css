@@ -1,0 +1,11 @@
+.checkIn__container {
+    margin: auto;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+    position: relative;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 358px;
+}

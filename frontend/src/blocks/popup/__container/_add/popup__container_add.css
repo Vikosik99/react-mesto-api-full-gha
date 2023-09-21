@@ -1,0 +1,13 @@
+.popup__container_add {
+    width: 430px;
+}
+
+/*525px*/
+
+@media screen and (max-width: 525px) {
+    .popup__container_add {
+        gap: 16px 0;
+        justify-items: end;
+        width: 282px;
+    }
+}

@@ -1,0 +1,13 @@
+.form_sure {
+    margin: 0;
+    padding: 0;
+}
+
+/*525px*/
+
+/* @media screen and (max-width: 525px) {
+    .form_sure {
+      justify-content: flex-start;
+      padding: 0;
+    }
+  } */

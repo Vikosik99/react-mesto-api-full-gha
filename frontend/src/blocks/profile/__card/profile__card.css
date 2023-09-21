@@ -1,0 +1,15 @@
+.profile__card {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/*700px*/
+
+@media screen and (max-width: 700px) {
+  .profile__card {
+    flex-direction: column;
+    gap: 26px;
+  }
+}

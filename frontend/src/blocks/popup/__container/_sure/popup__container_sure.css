@@ -1,0 +1,14 @@
+.popup__container_sure {
+    width: 430px;
+    padding: 34px 0 36px 0;
+}
+
+/*525px*/
+
+@media screen and (max-width: 525px) {
+    .popup__container_sure {
+        gap: 16px 0;
+        justify-items: end;
+        width: 282px;
+    }
+}

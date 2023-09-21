@@ -1,0 +1,26 @@
+.form__input-error {
+  width: 358px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FF0000;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* border-top: 1px red solid; */
+  padding-top: 5px;
+  box-sizing: border-box;
+  margin-top: -1px;
+  min-height: 36px;
+  visibility: visible;
+}
+
+/*525px*/
+
+@media screen and (max-width: 525px) {
+  .form__input-error {
+    width: 238px;
+  }
+}

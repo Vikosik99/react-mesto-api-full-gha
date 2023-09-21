@@ -1,0 +1,7 @@
+.popup__errorOrDonePopup_done {
+    background-image: url(../../../../images/Union-Done.svg);
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

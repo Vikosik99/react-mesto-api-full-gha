@@ -1,0 +1,27 @@
+.profile__button-pluse {
+  width: 150px;
+  height: 50px;
+  border: 2px #ffffff solid;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+.profile__button-pluse:hover {
+  opacity: 0.6;
+}
+
+/*700px*/
+
+@media screen and (max-width: 700px) {
+  .profile__button-pluse {
+    width: 282px;
+  }
+}

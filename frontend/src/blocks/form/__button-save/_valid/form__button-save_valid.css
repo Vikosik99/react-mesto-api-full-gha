@@ -1,0 +1,6 @@
+.form__button-save_valid {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px #ffffff solid;
+    cursor: pointer;
+  }
