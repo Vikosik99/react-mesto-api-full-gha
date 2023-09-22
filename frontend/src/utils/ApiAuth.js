@@ -1,4 +1,4 @@
-export const BASE_URL = "http://api.mestofull.vikosik99.nomoredomainsrocks.ru";
+export const BASE_URL = "https://api.mestofull.vikosik99.nomoredomainsrocks.ru";
 
 function handleReply(res) {
   if (res.ok) {
