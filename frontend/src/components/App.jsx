@@ -75,7 +75,7 @@ export default function App() {
     const rout = localStorage.getItem("jwt");
     api.changeLikeCardStatus(card._id, !isLiked, rout).then((newCard) => {
       setCards((cards) => cards.map((c) => c._id === card._id ? newCard : c));
-    }).catch(error => console.log(error));
+    }).catch(error => { console.log(error) });
   }
 
   function handleDeleteClick(event) {
@@ -87,7 +87,7 @@ export default function App() {
           return card._id !== isHandleCardDelete
         }))
         closeAllPopups()
-      }).catch((err) => console.log(`При удалении карточки: ${err}`));
+      }).catch((err) => { console.log(`При удалении карточки: ${err}`) });
   }
 
   useEffect(() => {
@@ -108,7 +108,7 @@ export default function App() {
       .then((res) => {
         setCurrentUser(res)
         closeAllPopups()
-      }).catch((err) => console.log(`При добавлении исходных имени и статуса: ${err}`));
+      }).catch((err) => { console.log(`При добавлении исходных имени и статуса: ${err}`) });
   }
 
   function handleUpdateAvatar(data) {
@@ -118,7 +118,7 @@ export default function App() {
         setCurrentUser(res)
         closeAllPopups()
       })
-      .catch((err) => console.log(`При обновлении аватара: ${err}`));
+      .catch((err) => { console.log(`При обновлении аватара: ${err}`) });
   }
 
   function handleAddPlaceSubmit({ name, link }) {
@@ -127,7 +127,7 @@ export default function App() {
       .then((res) => {
         setCards([res, ...cards])
         closeAllPopups()
-      }).catch((err) => console.log(`При добавлении новых карточек: ${err}`));
+      }).catch((err) => { console.log(`При добавлении новых карточек: ${err}`) });
   }
 
   useEffect(() => {
@@ -143,7 +143,7 @@ export default function App() {
               setHeaderEmail(res.email);
             }
           })
-          .catch((err) => console.log(`При routCheck: ${err}`));
+          .catch((err) => { console.log(`При routCheck: ${err}`) });
       } else {
         setLoggedIn(false);
       }
