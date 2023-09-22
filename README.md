@@ -1,23 +1,16 @@
-# Проект: Место
+[![Статус тестов](../../actions/workflows/tests.yml/badge.svg)](../../actions/workflows/tests.yml)
 
-## Описание проекта и его функциональности:
+# react-mesto-api-full 
+Репозиторий для приложения проекта `Mesto`, включающий фронтенд и бэкенд части приложения со следующими возможностями: авторизации и регистрации пользователей, операции с карточками и пользователями. Бэкенд расположите в директории `backend/`, а фронтенд - в `frontend/`. 
+  
+Пожалуйста, прикрепите в это описание ссылку на сайт, размещенный на Яндекс.Облаке
 
-- Сайт адаптивный.
-- Данная работа призвана показать навыки работы с java script
-- Данная работа призвана показать работу с помощью библиотеки React
+Адрес репозитория: https://github.com/Vikosik99/react-mesto-api-full-gha
 
----
+## Ссылки на проект
 
-## Список импользуемых технологий:
+IP 84.201.140.180
 
-- HTML
-- CSS
-- Java Script
-- React
+Frontend https://mestofull.vikosik99.nomoredomainsrocks.ru
 
----
-
-## Ссылка проекта на GitHub:
-
-    https://vikosik99.github.io/mesto-react /  - реализация с React
-    https://vikosik99.github.io/mesto - реализация без React
+Backend https://api.mestofull.vikosik99.nomoredomainsrocks.ru
