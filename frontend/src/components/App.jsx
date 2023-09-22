@@ -91,13 +91,14 @@ export default function App() {
   }
 
   useEffect(() => {
-    const rout = localStorage.getItem("jwt");
+    localStorage.getItem("jwt");
     if (loggedIn) {
-      Promise.all([api.getInitialCards(rout), api.getCards(rout)])
+      Promise.all([api.getInitialCards(localStorage.jwt), api.getCards(localStorage.jwt)])
         .then(([dataUserServer, dataCardServer]) => {
           setCurrentUser(dataUserServer)
           setCards(dataCardServer)
-        }).catch((err) => console.log(`При добавлении карточек: ${err}`));
+        })
+        .catch((err) => { console.log(`При добавлении карточек: ${err}`) });
     }
   }, [loggedIn])
 
