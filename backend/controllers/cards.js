@@ -8,6 +8,7 @@ module.exports.addCard = (req, res, next) => {
   const { name, link } = req.body;
   Card.create({ name, link, owner: req.user._id })
     .orFail()
+    .populate('owner')
     .then((card) => {
       res.status(201).send(card);
     })
