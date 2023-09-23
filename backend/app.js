@@ -10,6 +10,7 @@ const NotFoundError = require('./errors/NotFoundError');
 const app = express();
 
 app.use(cors());
+app.use(helmet());
 
 const { PORT = 3000, DB_URL = 'mongodb://127.0.0.1:27017/testdb' } = process.env;
 
@@ -48,7 +49,5 @@ app.use((err, req, res, next) => {
     });
   next();
 });
-
-app.use(helmet());
 
 app.listen(PORT);
