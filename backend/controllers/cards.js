@@ -81,7 +81,7 @@ module.exports.likeCard = (req, res, next) => {
   const cardid = req.params.cardId;
   Card.findByIdAndUpdate(cardid, { $addToSet: { likes: req.user._id } }, { new: true })
     .orFail()
-    .populate(['owner', 'likes'])
+    // .populate(['owner', 'likes'])
     .then((card) => {
       res.send(card);
     })
@@ -100,7 +100,7 @@ module.exports.deletelikeCard = (req, res, next) => {
   const cardid = req.params.cardId;
   Card.findByIdAndUpdate(cardid, { $pull: { likes: req.user._id } }, { new: true })
     .orFail()
-    .populate(['owner', 'likes'])
+    // .populate(['owner', 'likes'])
     .then((card) => {
       res.send(card);
     })
